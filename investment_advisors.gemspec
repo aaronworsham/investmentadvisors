@@ -1,10 +1,10 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "investmentadvisors/version"
+require "investment_advisors/version"
 
 Gem::Specification.new do |s|
-  s.name        = "investmentadvisors"
-  s.version     = Investmentadvisors::VERSION
+  s.name        = "investment_advisors"
+  s.version     = InvestmentAdvisors::VERSION
   s.authors     = ["Aaron Worsham"]
   s.email       = ["aaronworsham@gmail.com"]
   s.homepage    = ""

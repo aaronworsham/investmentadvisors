@@ -1,4 +1,10 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in investmentadvisors.gemspec
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'rspec'
+end
+
+gem 'sqlite3'
+
 gemspec

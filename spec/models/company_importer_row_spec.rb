@@ -6,6 +6,7 @@ describe CompanyImporterRow do
     
     it 'should create an InvestmentCompany' do
       company_row.investment_company.should_not be_nil
+      InvestmentCompany.count.should eql(1)
     end
     
     it 'should have valid data' do

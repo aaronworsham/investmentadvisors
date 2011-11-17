@@ -76,14 +76,11 @@ class CompanyImporterRow
   private
   
     def create_investment_company
-      @investment_company = InvestmentCompany.new(:card_number => card_number, :sec_number => sec_number,
-                                                  :business_name => business_name, :legal_name => legal_name,
-                                                  :address_1 => address_1, :address_2 => address_2, :city => city, 
-                                                  :state_abbr => state_abbr, :zip_code => zip_code, :phone => phone,
-                                                  :fax => fax, :email => email, :website => website,
-                                                  :registration_status => registration_status, 
-                                                  :registration_effective_date => registration_effective_date)
-      @investment_company.save
+      @investment_company = InvestmentCompany.create(:card_number => card_number, :sec_number => sec_number,
+        :business_name => business_name, :legal_name => legal_name,:address_1 => address_1, 
+        :address_2 => address_2, :city => city, :state_abbr => state_abbr, :zip_code => zip_code, :phone => phone,
+        :fax => fax, :email => email, :website => website,
+        :registration_status => registration_status, :registration_effective_date => registration_effective_date)
     end
   
 end

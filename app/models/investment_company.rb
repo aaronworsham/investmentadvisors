@@ -6,4 +6,7 @@ class InvestmentCompany < ActiveRecord::Base
   scope :by_name, lambda { |search_name| 
     where("business_name LIKE '%#{search_name}%' OR legal_name LIKE '%#{search_name}%'") 
   }
+  
+  def address
+  end
 end

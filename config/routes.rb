@@ -49,9 +49,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
-  root :to => "searches#new"
+  root :to => "advisor_searches#new"
   
-  resources :searches
+  resources :advisor_searches
+  resources :investment_companies
 
   # See how all your routes lay out with "rake routes"
 

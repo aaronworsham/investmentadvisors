@@ -14,5 +14,5 @@ group :development, :test do
   gem "rb-fsevent"
   gem "yard"
   gem "pry"
-  gem "ruby-debug"
+  gem "ruby-debug19"
 end

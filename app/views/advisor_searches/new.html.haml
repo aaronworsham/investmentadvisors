@@ -1,0 +1,25 @@
+= content_for :on_ready do
+  - if @advisor_search
+    !="AdvisorSearchApp.InvestmentCompanies.add(#{@advisor_search.results.to_json});"
+
+#advisor-search-app
+  %h1 Find Advisor
+  
+  = render 'form'
+    
+  %h2 Results via Backbone
+  
+  #notice
+  
+  %table#advisor-search-result-items
+    %tr
+      %th Business Name
+      %th Legal Name
+      %th Address
+      %th 
+      %th
+      %th
+
+= content_for :templates do
+  / = template_include_tag "advisor_search_result"
+  

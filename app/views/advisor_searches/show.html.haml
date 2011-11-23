@@ -1,3 +1,8 @@
-%h1 Find Advisor Results
+#advisor-search-app
+  %h1 Find Advisor
+  
+  = render 'form'
+    
+  %h2 Search Results
 
-%p= @search.results.size
+  #advisor-search-results= render 'search_results'

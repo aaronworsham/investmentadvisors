@@ -1,0 +1,23 @@
+- if @advisor_search.results.size > 0
+  %table#advisor-search-result-table
+    %thead
+      %tr
+        %th Business Name
+        %th Legal Name
+        %th Address
+        %th 
+        %th
+        %th
+    %tbody
+      - @advisor_search.results.each do |result|
+        %tr
+          %td= result.business_name
+          %td= result.legal_name
+          %td= result.address
+          %td
+          %td
+          %td
+          
+      
+- else
+  %p No Search Results
